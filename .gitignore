@@ -1,0 +1,99 @@
+# Gitignore
+
+
+# PHP specific ignores
+# --------------------
+# Composer vendor directory
+/vendor/
+# Composer installed packages (if not in vendor)
+composer.lock
+# PHPUnit
+.phpunit.result.cache
+
+# Environment variables
+# Your databankconfig.env file
+/config/databankconfig.env
+.env
+.env.local
+.env.*.local
+.env.dev
+.htaccess
+/public/.htaccess
+
+# Log files
+/logs/
+*.log
+*.err
+*.sql.log
+
+# User-uploaded content (profile pictures, etc.)
+# This is crucial as these are dynamic and often large files
+/media/profile_Img/
+/media/temp/ # If you have any temporary upload directories
+
+# IDE and Editor specific files
+# -----------------------------
+# PhpStorm / IntelliJ IDEA
+.idea/
+.project
+.settings/
+.iml
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Operating System generated files
+# --------------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Package managers (if you use npm/yarn for frontend assets)
+# ----------------------------------------------------------
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Cache directories
+# -----------------
+/var/cache/prod/
+/var/cache/
+/cache/
+/tmp/
+*.tmp
+*.temp
+
+# Compiled/Generated files (if any)
+# ---------------------------------
+# e.g., if you compile CSS/JS from source files
+/dist/
+/build/
+
+# Backup files
+*~
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*.swn
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
+.env.dev
